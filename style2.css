@@ -1,0 +1,216 @@
+/* font used  */
+/* font-family: 'Lato', sans-serif for body;
+font-family: 'Raleway', sans-serif; for headings */
+
+body{
+    background-color: #080110;
+    font-family: 'Lato', sans-serif;
+}
+
+/* NAVABAR */
+
+.home{
+    padding-bottom: 20%;
+}
+.navbar-brand{
+    width: 50px;
+}
+.navbar-nav{
+    text-align: center;
+    box-shadow: inset;
+    font-family: 'Raleway', sans-serif;
+}
+.nav-link{
+    color: #DDDDDD;
+    padding-right: 10px;
+    margin: 5px;
+}
+
+.nav-link:hover{
+    color: #A084DC;
+}
+
+.navbar-toggler-icon{
+    background-image: url(images/menu.png);
+}
+
+#hamburger-btn{
+    border:none;
+}
+
+.btn-resume{
+    width: 140px;
+    height: 40px;
+    background-color: #26232d;
+    color: #ffff;
+    border: 2px solid #fffff;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.btn-resume:hover{
+    color: #A084DC;
+    border: 2px solid #A084DC;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: #A084DC;
+}
+
+img{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+
+
+/* INTRO */
+
+.text-main{
+    max-width: max-content;
+    margin: auto ;
+    margin-top: 10%;
+    
+}
+.text-main h1{
+    color: #fff;
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.08em;
+}
+.text-main h2{
+    color: #A084DC;
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 70px;
+    letter-spacing: 0.06em;
+
+}
+.text-main h3{
+    color: #808080;
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.1em;
+}
+
+.text-main img{
+    position: absolute;
+    align-items: center;
+    width: 900px;
+    height: 400px;
+    top: 150px;
+
+}
+
+.text-main .circle{
+    position: absolute; 
+    top: 80%;
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width:80px;
+    height: 80px;
+    text-align: center;
+    line-height: 110px;
+    font-size: 40px;
+    overflow: hidden;
+}
+
+.circle .fa{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    animation: down 1s  linear infinite;
+}
+
+@keyframes down {
+    0%{
+        transform: translateY(-50px);
+        text-shadow: 0 50px 0 #fff;
+
+    }
+    20%{
+        transform: translateY(0px);
+        /* text-shadow: 0 10px 0 #fff; */
+    }
+    40%{
+        transform: translateY(0px);
+        /* text-shadow: 0 10px 0 #fff; */
+    }
+    60%{
+        transform: translateY(0px);
+        /* text-shadow: 0 0px 0 #fff; */
+    }
+    100%{
+        transform: translateY(100px);
+        /* text-shadow: 0 -50px 0 #fff; */
+    }
+}
+
+
+
+/* about section  */
+
+.About{
+    margin-right: 7%;
+    border-right-color: #A084DC;
+    border-right-width: 5px;
+    border-right-style: solid;
+    padding-top: 0px;
+}
+
+.About h3{
+ 
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: right;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+.About .container{
+   padding-top: 0px;
+   text-align: right;
+    
+}
+.About .container .img{
+    text-align: left;
+    padding-top: 20px;
+    
+ }
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 300px) and (max-width: 1088px) {
+    .navbar{
+        padding-right: 5vw; /* Corresponds to 10% of the viewport width */
+        padding-left: 5vw; /* Corresponds to 10% of the viewport width */
+    }
+    .text-main{
+        padding-right: 5vw;
+        padding-left: 5vw;
+    }
+    .text-main img{
+        display: none;
+    }
+}
